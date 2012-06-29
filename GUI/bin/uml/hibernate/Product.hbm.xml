@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-6-16 9:24:29 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="uml.hibernate.Product" table="product" catalog="umltest">
+        <id name="productid" type="java.lang.Integer">
+            <column name="productid" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="unitgroup" class="uml.hibernate.Unitgroup" fetch="select">
+            <column name="unit" />
+        </many-to-one>
+        <many-to-one name="productgroup" class="uml.hibernate.Productgroup" fetch="select">
+            <column name="category" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="name" length="20" not-null="true" />
+        </property>
+        <property name="unitPrice" type="float">
+            <column name="unit_price" precision="11" scale="0" not-null="true" />
+        </property>
+        <property name="jinpin" type="string">
+            <column name="jinpin" length="10" not-null="true" />
+        </property>
+        <property name="currentInventory" type="int">
+            <column name="current_inventory" not-null="true" />
+        </property>
+        <set name="tabledishs" table="tabledish" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="dishid" not-null="true" />
+            </key>
+            <one-to-many class="uml.hibernate.Tabledish" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-6-26 17:05:02 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="uml.hibernate.Waitergroup" table="waitergroup" catalog="umltest">
+        <id name="waitergroupid" type="int">
+            <column name="waitergroupid" />
+            <generator class="assigned" />
+        </id>
+        <property name="category" type="string">
+            <column name="category" length="20" not-null="true" />
+        </property>
+        <set name="waiters" table="waiter" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="waitergroupid" not-null="true" />
+            </key>
+            <one-to-many class="uml.hibernate.Waiter" />
+        </set>
+    </class>
+</hibernate-mapping>

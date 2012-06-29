@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-6-16 9:24:29 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="uml.hibernate.BookingBill" table="booking_bill" catalog="umltest">
+        <id name="bookingid" type="java.lang.Integer">
+            <column name="bookingid" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="booker" class="uml.hibernate.Booker" fetch="select">
+            <column name="bookerid" not-null="true" />
+        </many-to-one>
+        <property name="bookTime" type="timestamp">
+            <column name="book_time" length="19" not-null="true" />
+        </property>
+        <property name="bookingPeriod" type="string">
+            <column name="booking_period" length="10" not-null="true" />
+        </property>
+        <property name="preArrivalTime" type="time">
+            <column name="pre_arrival_time" length="8" />
+        </property>
+        <property name="proDeposit" type="java.lang.Float">
+            <column name="pro_deposit" precision="12" scale="0" />
+        </property>
+        <property name="feedback" type="string">
+            <column name="feedback" length="100" />
+        </property>
+        <property name="state" type="string">
+            <column name="state" length="10" not-null="true" />
+        </property>
+        <property name="cancelTime" type="time">
+            <column name="cancel_time" length="8" />
+        </property>
+        <set name="bookTables" table="book_table" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="bookingbillid" not-null="true" />
+            </key>
+            <one-to-many class="uml.hibernate.BookTable" />
+        </set>
+    </class>
+</hibernate-mapping>

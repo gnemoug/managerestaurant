@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-6-24 14:59:32 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="uml.hibernate.Dinningtable" table="dinningtable" catalog="umltest">
+        <id name="tableid" type="int">
+            <column name="tableid" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="tablegroup" class="uml.hibernate.Tablegroup" fetch="select">
+            <column name="category" not-null="true" />
+        </many-to-one>
+        <property name="state" type="string">
+            <column name="state" length="7" not-null="true" />
+        </property>
+        <set name="walkinBills" table="walkin_bill" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tableid" not-null="true" />
+            </key>
+            <one-to-many class="uml.hibernate.WalkinBill" />
+        </set>
+        <set name="bookTables" table="book_table" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="book_tableid" not-null="true" />
+            </key>
+            <one-to-many class="uml.hibernate.BookTable" />
+        </set>
+        <set name="tabledishs" table="tabledish" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="tableid" not-null="true" />
+            </key>
+            <one-to-many class="uml.hibernate.Tabledish" />
+        </set>
+    </class>
+</hibernate-mapping>

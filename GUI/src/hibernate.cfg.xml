@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">gnemoug</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/umltest?useUnicode=true&amp;characterEncoding=UTF-8</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        
+        <property name="hibernate.current_session_context_class">thread</property>
+        
+        <property name="show_sql">false</property>
+          
+        <mapping resource="uml/hibernate/Staff.hbm.xml" /> 
+        <mapping resource="uml/hibernate/Tablegroup.hbm.xml" /> 
+        <mapping resource="uml/hibernate/Dinningtable.hbm.xml" /> 
+        <mapping resource="uml/hibernate/WalkinBill.hbm.xml" />
+        <mapping resource="uml/hibernate/Unitgroup.hbm.xml" />
+        <mapping resource="uml/hibernate/Tabledish.hbm.xml" />
+        <mapping resource="uml/hibernate/Productgroup.hbm.xml" />
+        <mapping resource="uml/hibernate/Product.hbm.xml" />
+        <mapping resource="uml/hibernate/BookTable.hbm.xml" />
+        <mapping resource="uml/hibernate/BookingBill.hbm.xml" />
+        <mapping resource="uml/hibernate/Booker.hbm.xml" />
+        <mapping resource="uml/hibernate/Waiter.hbm.xml" />
+        <mapping resource="uml/hibernate/Waitergroup.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

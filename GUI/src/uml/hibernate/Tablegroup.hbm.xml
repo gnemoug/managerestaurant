@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-6-16 9:24:29 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="uml.hibernate.Tablegroup" table="tablegroup" catalog="umltest">
+        <id name="tablecateid" type="java.lang.Integer">
+            <column name="tablecateid" />
+            <generator class="identity" />
+        </id>
+        <property name="category" type="string">
+            <column name="category" length="10" not-null="true" />
+        </property>
+        <property name="containNumber" type="int">
+            <column name="contain_number" not-null="true" />
+        </property>
+        <property name="lowestConsumption" type="float">
+            <column name="lowest_consumption" precision="12" scale="0" not-null="true" />
+        </property>
+        <set name="dinningtables" table="dinningtable" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="category" not-null="true" />
+            </key>
+            <one-to-many class="uml.hibernate.Dinningtable" />
+        </set>
+    </class>
+</hibernate-mapping>

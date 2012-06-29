@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-6-16 9:24:29 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="uml.hibernate.Booker" table="booker" catalog="umltest">
+        <id name="bookerid" type="java.lang.Integer">
+            <column name="bookerid" />
+            <generator class="identity" />
+        </id>
+        <property name="cellphone" type="string">
+            <column name="cellphone" length="25" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="32" />
+        </property>
+        <set name="bookingBills" table="booking_bill" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="bookerid" not-null="true" />
+            </key>
+            <one-to-many class="uml.hibernate.BookingBill" />
+        </set>
+    </class>
+</hibernate-mapping>

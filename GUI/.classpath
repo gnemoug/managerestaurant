@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.osgi_3.7.2.v20120110-1415.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.osgi_3.7.2.v20120110-1415.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.core.commands_3.6.0.I20110111-0800.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.core.commands_3.6.0.I20110111-0800.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.equinox.common_3.6.0.v20110523.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.equinox.common_3.6.0.v20110523.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.equinox.registry_3.5.101.R37x_v20110810-1611.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.equinox.registry_3.5.101.R37x_v20110810-1611.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.core.runtime_3.7.0.v20110110.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.core.runtime_3.7.0.v20110110.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.text_3.5.101.v20110928-1504.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.text_3.5.101.v20110928-1504.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.swt.win32.win32.x86_3.7.2.v3740f.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.swt.win32.win32.x86_3.7.2.v3740f.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.jface_3.7.0.v20110928-1505.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.jface_3.7.0.v20110928-1505.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.jface.text_3.7.2.v20111213-1208.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.jface.text_3.7.2.v20111213-1208.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.ui.workbench_3.7.1.v20120104-1859.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.ui.workbench_3.7.1.v20120104-1859.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/com.ibm.icu_4.4.2.v20110823.jar" sourcepath="E:/create_java_environment/eclipse/plugins/com.ibm.icu_4.4.2.v20110823.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.ui.forms_3.5.101.v20111011-1919.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.ui.forms_3.5.101.v20111011-1919.jar"/>
+	<classpathentry kind="lib" path="swt-grouplayout.jar" sourcepath="swt-grouplayout.zip"/>
+	<classpathentry kind="lib" path="swing2swt.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.core.databinding_1.4.0.I20110111-0800.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.core.databinding_1.4.0.I20110111-0800.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.core.databinding.beans_1.2.100.I20100824-0800.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.core.databinding.beans_1.2.100.I20100824-0800.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.core.databinding.observable_1.4.0.I20110222-0800.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.core.databinding.observable_1.4.0.I20110222-0800.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.core.databinding.property_1.4.0.I20110222-0800.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.core.databinding.property_1.4.0.I20110222-0800.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/plugins/org.eclipse.jface.databinding_1.5.0.I20100907-0800.jar" sourcepath="E:/create_java_environment/eclipse/plugins/org.eclipse.jface.databinding_1.5.0.I20100907-0800.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/facelook/substance.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/mysql-connector-java-5.1.6-bin.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/required/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/required/classmate-0.5.2.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/required/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/required/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/required/hibernate-commons-annotations-3.2.0.Final.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/required/hibernate-core-4.0.0.Beta2.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/required/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/required/jandex-1.0.0.Beta7.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/required/javassist-3.12.0.GA.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/required/jboss-logging-3.0.0.Beta5.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/required/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/envers/hibernate-tools-3.2.0.ga.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/required/slf4j-api-1.6.5.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/required/slf4j-simple-1.6.5.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/mylib/commons-logging-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/graph/itext-2.0.6.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/graph/jcommon-1.0.12.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/graph/jfreechart-1.0.8.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/graph/jfreechart-1.0.8-experimental.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/graph/jfreechart-1.0.8-swt.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/graph/swtgraphics2d.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/graph/junit.jar"/>
+	<classpathentry kind="lib" path="E:/create_java_environment/eclipse/graph/servlet.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

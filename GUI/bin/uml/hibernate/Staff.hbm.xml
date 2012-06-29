@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-6-16 9:24:29 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="uml.hibernate.Staff" table="staff" catalog="umltest">
+        <id name="staffid" type="java.lang.Integer">
+            <column name="staffid" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="32" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="32" />
+        </property>
+        <property name="flag" type="string">
+            <column name="flag" length="13" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

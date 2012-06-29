@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-6-24 15:03:39 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="uml.hibernate.WalkinBill" table="walkin_bill" catalog="umltest">
+        <id name="walkinid" type="java.lang.Integer">
+            <column name="walkinid" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="dinningtable" class="uml.hibernate.Dinningtable" fetch="select">
+            <column name="tableid" not-null="true" />
+        </many-to-one>
+        <property name="peopleNumber" type="int">
+            <column name="people_number" not-null="true" />
+        </property>
+        <property name="feedback" type="string">
+            <column name="feedback" length="100" />
+        </property>
+        <property name="date" type="timestamp">
+            <column name="date" length="19" not-null="true" />
+        </property>
+        <property name="state" type="string">
+            <column name="state" length="9" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

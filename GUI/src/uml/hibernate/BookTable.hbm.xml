@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-6-16 9:24:29 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="uml.hibernate.BookTable" table="book_table" catalog="umltest">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="dinningtable" class="uml.hibernate.Dinningtable" fetch="select">
+            <column name="book_tableid" not-null="true" />
+        </many-to-one>
+        <many-to-one name="bookingBill" class="uml.hibernate.BookingBill" fetch="select">
+            <column name="bookingbillid" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

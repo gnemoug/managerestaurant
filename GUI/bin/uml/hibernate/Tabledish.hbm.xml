@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2012-6-16 15:50:45 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="uml.hibernate.Tabledish" table="tabledish" catalog="umltest">
+        <id name="menuid" type="java.lang.Integer">
+            <column name="menuid" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="product" class="uml.hibernate.Product" fetch="select">
+            <column name="dishid" not-null="true" />
+        </many-to-one>
+        <many-to-one name="dinningtable" class="uml.hibernate.Dinningtable" fetch="select">
+            <column name="tableid" not-null="true" />
+        </many-to-one>
+        <property name="amount" type="java.lang.Integer">
+            <column name="amount" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="100" />
+        </property>
+        <property name="bookingbillid" type="int">
+            <column name="bookingbillid" not-null="true" />
+        </property>
+        <property name="walkinbillid" type="int">
+            <column name="walkinbillid" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
