@@ -1,6 +1,6 @@
 managerestaurant
 ================
-
+<pre>
 这是自己uml课程设计时做的一个餐馆订餐管理系统，使用java,hibernate,mysql,GWT开发,采用分层设计：
 *主要分为三层：
 **    ui层，
