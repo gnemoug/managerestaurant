@@ -15,6 +15,6 @@ managerestaurant
 
 
 <ul/>它对您的作用:
-<li>
-<li>
+<li/>123</li>
+<li/>321</li>
 </ul>
