@@ -1,7 +1,7 @@
 managerestaurant
 ================
 
-这是自己uml课程设计时做的一个餐馆订餐管理系统，使用java,hibernate,mysql开发,采用分层设计：<br/>
+这是自己uml课程设计时做的一个餐馆订餐管理系统，使用java,hibernate,mysql,GWT开发,采用分层设计：<br/>
 主要分为三层：<br/>
 &nbsp;&nbsp;ui层，<br/>
 &nbsp;&nbsp;中间数据提供层，<br/>
@@ -18,4 +18,5 @@ managerestaurant
 1.了解分层设计理念<br/>
 2.熟悉hibernate的使用<br/>
 3.有类似的课程设计(比如说你也是....的学生)<br/>
+4.打算用java做一个漂亮的客户端界面（本系统使用了GWT，这是它的链接https://developers.google.com/web-toolkit/tools/gwtdesigner/index，你可以通过本项目了解它的使用）
 
