@@ -121,7 +121,7 @@ public class GUI {
 				int style = SWT.APPLICATION_MODAL | SWT.YES | SWT.NO;
 				MessageBox messageBox = new MessageBox(shlStar, style);
 				messageBox.setText("Information");
-				messageBox.setMessage("È·¶¨ÒªÍË³öÏµÍ³Âð?");
+				messageBox.setMessage("È·ï¿½ï¿½Òªï¿½Ë³ï¿½ÏµÍ³ï¿½ï¿½?");
 				e.doit = messageBox.open() == SWT.YES;
 			}
 		});
@@ -133,31 +133,31 @@ public class GUI {
 		lblNewLabel_3 = new Label(composite, SWT.NONE);
 		lblNewLabel_3.setForeground(SWTResourceManager
 				.getColor(SWT.COLOR_DARK_MAGENTA));
-		lblNewLabel_3.setFont(SWTResourceManager.getFont("»ªÎÄÐÐ¿¬", 14, SWT.BOLD));
+		lblNewLabel_3.setFont(SWTResourceManager.getFont("ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½", 14, SWT.BOLD));
 		lblNewLabel_3.setBounds(108, 89, 73, 17);
 
 		lblNewLabel_2 = new Label(composite, SWT.NONE);
 		lblNewLabel_2.setForeground(SWTResourceManager
 				.getColor(SWT.COLOR_DARK_MAGENTA));
-		lblNewLabel_2.setFont(SWTResourceManager.getFont("»ªÎÄÐÐ¿¬", 14, SWT.BOLD));
+		lblNewLabel_2.setFont(SWTResourceManager.getFont("ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½", 14, SWT.BOLD));
 		lblNewLabel_2.setBounds(105, 37, 76, 17);
 
 		lblNewLabel_4 = new Label(composite, SWT.NONE);
 		lblNewLabel_4.setForeground(SWTResourceManager
 				.getColor(SWT.COLOR_DARK_MAGENTA));
-		lblNewLabel_4.setFont(SWTResourceManager.getFont("»ªÎÄÐÐ¿¬", 14, SWT.BOLD));
+		lblNewLabel_4.setFont(SWTResourceManager.getFont("ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½", 14, SWT.BOLD));
 		lblNewLabel_4.setBounds(108, 141, 73, 18);
 
 		lblNewLabel_5 = new Label(composite, SWT.NONE);
 		lblNewLabel_5.setForeground(SWTResourceManager
 				.getColor(SWT.COLOR_DARK_MAGENTA));
-		lblNewLabel_5.setFont(SWTResourceManager.getFont("»ªÎÄÐÐ¿¬", 14, SWT.BOLD));
+		lblNewLabel_5.setFont(SWTResourceManager.getFont("ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½", 14, SWT.BOLD));
 		lblNewLabel_5.setBounds(103, 193, 78, 17);
 
 		lblNewLabel_6 = new Label(composite, SWT.NONE);
 		lblNewLabel_6.setForeground(SWTResourceManager
 				.getColor(SWT.COLOR_DARK_MAGENTA));
-		lblNewLabel_6.setFont(SWTResourceManager.getFont("»ªÎÄÐÐ¿¬", 14, SWT.BOLD));
+		lblNewLabel_6.setFont(SWTResourceManager.getFont("ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½", 14, SWT.BOLD));
 		lblNewLabel_6.setBounds(100, 242, 81, 17);
 
 		table = new Table(shlStar, SWT.BORDER | SWT.FULL_SELECTION);
@@ -243,7 +243,7 @@ public class GUI {
 					GUI.class, "/pic/\u80CC\u666F1.jpg"));
 			scrolledComposite_1.setContent(composite_2);
 			composite_2.setBackground(Display.getCurrent().getSystemColor(
-					SWT.COLOR_WHITE));// White color
+					SWT.COLOR_WHITE)); // White color
 			composite_2.setLayout(new GridLayout(9, true));
 
 			for (int j = 0; j < tables.size(); j++) {
@@ -275,9 +275,9 @@ public class GUI {
 				}
 				DragSource source = new DragSource(button_n, DND.DROP_MOVE
 						| DND.DROP_COPY);
-				source.setTransfer(new Transfer[] { TextTransfer.getInstance() });// ÉèÖÃ´«ÊäÔØÌåÎªÎÄ±¾ÐÍ
+				source.setTransfer(new Transfer[] { TextTransfer.getInstance() });// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Ä±ï¿½ï¿½ï¿½
 				source.addDragListener(new MyDragSourceListener());
-				// ÉèÖÃtargetTextÎªÄ¿±êµØ
+				// ï¿½ï¿½ï¿½ï¿½targetTextÎªÄ¿ï¿½ï¿½ï¿½ï¿½
 				DropTarget target = new DropTarget(button_n, DND.DROP_MOVE
 						| DND.DROP_COPY | DND.DROP_DEFAULT);
 				target.setTransfer(new Transfer[] { TextTransfer.getInstance() });
@@ -301,7 +301,7 @@ public class GUI {
 							lblNewLabel_3.setText("");
 							lblNewLabel_4.setText("");
 							lblNewLabel_5.setText("");
-							lblNewLabel_6.setText("¿ÕÏÐ");
+							lblNewLabel_6.setText("ï¿½ï¿½ï¿½ï¿½");
 						} else if (stateString.equals("WALK_IN")) {
 							int walkinbillid = uml.middleclass.Table
 									.getWalkinid(ptableid);
@@ -331,10 +331,10 @@ public class GUI {
 									.getDate().getMinutes())
 									+ (date.getHours() - walkinBill.getDate()
 											.getHours()) * 60;
-							lblNewLabel_4.setText(String.valueOf(minutes) + "·Ö");
+							lblNewLabel_4.setText(String.valueOf(minutes) + "ï¿½ï¿½");
 							lblNewLabel_5.setText(String.valueOf(wholemoney)
 									+ "Ôª");
-							lblNewLabel_6.setText("¿ªµ¥");
+							lblNewLabel_6.setText("ï¿½ï¿½ï¿½ï¿½");
 						} else {
 							List<Integer> bookbillids = uml.middleclass.Table
 									.getBookbillids(ptableid);
@@ -379,10 +379,10 @@ public class GUI {
 													.getPreArrivalTime()
 													.getHours()) * 60;
 									lblNewLabel_4.setText(String
-											.valueOf(minutes) + "·Ö");
+											.valueOf(minutes) + "ï¿½ï¿½");
 									lblNewLabel_5.setText(String
 											.valueOf(wholemoney) + "Ôª");
-									lblNewLabel_6.setText("Ô¤¶©µ½´ï");
+									lblNewLabel_6.setText("Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 									break;
 								}
 							}
@@ -395,7 +395,7 @@ public class GUI {
 								lblNewLabel_3.setText("");
 								lblNewLabel_4.setText("");
 								lblNewLabel_5.setText("");
-								lblNewLabel_6.setText("Ô¤¶©Î´´ï");
+								lblNewLabel_6.setText("Ô¤ï¿½ï¿½Î´ï¿½ï¿½");
 							}
 						}
 					}
@@ -411,7 +411,7 @@ public class GUI {
 
 		toolBar = new ToolBar(shlStar, SWT.FLAT);
 		toolBar.setForeground(SWTResourceManager.getColor(SWT.COLOR_BLACK));
-		toolBar.setFont(SWTResourceManager.getFont("Î¢ÈíÑÅºÚ", 9, SWT.BOLD));
+		toolBar.setFont(SWTResourceManager.getFont("Î¢ï¿½ï¿½ï¿½Åºï¿½", 9, SWT.BOLD));
 		toolBar.setBounds(10, 0, 871, 74);
 
 		ToolItem tltmNewItem_2 = new ToolItem(toolBar, SWT.NONE);
@@ -498,7 +498,7 @@ public class GUI {
 							MessageBox messageBox = new MessageBox(shlStar,
 									style);
 							messageBox.setText("Information");
-							messageBox.setMessage("ÊÇ·ñÒªÈ¡Ïû¿ªµ¥?");
+							messageBox.setMessage("ï¿½Ç·ï¿½ÒªÈ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?");
 							if(messageBox.open() == SWT.YES){
 								e.doit = true;
 								WalkinBill.giveup(walkinbillid,ptableid);
@@ -516,7 +516,7 @@ public class GUI {
 							}
 							int bookbillid = 0;
 							shlStar.setEnabled(false);
-							µã²Ë window = new µã²Ë(ptableid, walkinbillid,
+							ï¿½ï¿½ï¿½ï¿½ window = new ï¿½ï¿½ï¿½ï¿½(ptableid, walkinbillid,
 									bookbillid, wholemoney, walkinbillshowsList);
 							window.open();
 							shlStar.setEnabled(true);
@@ -548,7 +548,7 @@ public class GUI {
 																.get(i + 2));
 									}
 									shlStar.setEnabled(false);
-									½áÕË window = new ½áÕË(ptableid, walkinbillid,
+									ï¿½ï¿½ï¿½ï¿½ window = new ï¿½ï¿½ï¿½ï¿½(ptableid, walkinbillid,
 											bookbillids.get(k), wholemoney, resultsStrings);
 									window.open();
 									shlStar.setEnabled(true);
@@ -573,7 +573,7 @@ public class GUI {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				shlStar.setEnabled(false);
-				G»áÔ±½áÕË window = new G»áÔ±½áÕË();
+				Gï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ window = new Gï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½();
 				window.open();
 				shlStar.setEnabled(true);
 			}
@@ -603,7 +603,7 @@ public class GUI {
 								.getwalkinbillshows(ptableid, walkinbillid);
 						if (walkinbillshowsList.size() == 0) {
 							shlStar.setEnabled(false);
-							µã²Ë window = new µã²Ë(ptableid, walkinbillid, 0);
+							ï¿½ï¿½ï¿½ï¿½ window = new ï¿½ï¿½ï¿½ï¿½(ptableid, walkinbillid, 0);
 							window.open();
 							shlStar.setEnabled(true);
 							display(tabFolder);
@@ -617,7 +617,7 @@ public class GUI {
 												.get(i + 2));
 							}
 							shlStar.setEnabled(false);
-							µã²Ë window = new µã²Ë(ptableid, walkinbillid,
+							ï¿½ï¿½ï¿½ï¿½ window = new ï¿½ï¿½ï¿½ï¿½(ptableid, walkinbillid,
 									bookbillid, wholemoney, walkinbillshowsList);
 							window.open();
 							shlStar.setEnabled(true);
@@ -637,7 +637,7 @@ public class GUI {
 												bookbillids.get(k));
 								if (resultsStrings.size() == 0) {
 									shlStar.setEnabled(false);
-									µã²Ë window = new µã²Ë(ptableid, 0, bookbillids
+									ï¿½ï¿½ï¿½ï¿½ window = new ï¿½ï¿½ï¿½ï¿½(ptableid, 0, bookbillids
 											.get(k));
 									window.open();
 									shlStar.setEnabled(true);
@@ -656,14 +656,14 @@ public class GUI {
 									}
 									if (newresultsStrings.size() == 0){
 										shlStar.setEnabled(false);
-										µã²Ë window = new µã²Ë(ptableid, 0, bookbillids
+										ï¿½ï¿½ï¿½ï¿½ window = new ï¿½ï¿½ï¿½ï¿½(ptableid, 0, bookbillids
 												.get(k));
 										window.open();
 										shlStar.setEnabled(true);
 										display(tabFolder);
 									}else{
 										shlStar.setEnabled(false);
-										µã²Ë window = new µã²Ë(ptableid, walkinbillid,
+										ï¿½ï¿½ï¿½ï¿½ window = new ï¿½ï¿½ï¿½ï¿½(ptableid, walkinbillid,
 												bookbillids.get(k), wholemoney,
 												newresultsStrings);
 										window.open();
@@ -687,7 +687,7 @@ public class GUI {
 		toolItem_2.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				G»áÔ±¹ÜÀí window = new G»áÔ±¹ÜÀí();
+				Gï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ window = new Gï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½();
 				window.open();
 			}
 		});
@@ -700,7 +700,7 @@ public class GUI {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				shlStar.setEnabled(false);
-				G²ÆÎñ¹ÜÀí window = new G²ÆÎñ¹ÜÀí();
+				Gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ window = new Gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½();
 				window.open();
 				shlStar.setEnabled(true);
 				
@@ -730,13 +730,13 @@ public class GUI {
 		ymd.setForeground(SWTResourceManager.getColor(SWT.COLOR_DARK_MAGENTA));
 		ymd.setAlignment(SWT.CENTER);
 		ymd.setBounds(0, 471, 242, 53);
-		ymd.setFont(SWTResourceManager.getFont("»ªÎÄÐÂÎº", 14, SWT.BOLD));
+		ymd.setFont(SWTResourceManager.getFont("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îº", 14, SWT.BOLD));
 
 		final Label hms = new Label(shlStar, SWT.NONE);
 		hms.setForeground(SWTResourceManager.getColor(SWT.COLOR_DARK_MAGENTA));
 		hms.setAlignment(SWT.CENTER);
 		hms.setBounds(0, 524, 242, 58);
-		hms.setFont(SWTResourceManager.getFont("»ªÎÄÐÂÎº", 14, SWT.BOLD));
+		hms.setFont(SWTResourceManager.getFont("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îº", 14, SWT.BOLD));
 		Thread thread = new Thread(new Runnable() {
 			public void run() {
 				while (true) {
@@ -745,13 +745,13 @@ public class GUI {
 					} catch (InterruptedException e) {
 					}
 					// TODO: handle exception
-					// Ê¹ÓÃUIÏß³Ì
+					// Ê¹ï¿½ï¿½UIï¿½ß³ï¿½
 					display.asyncExec(new Runnable() {
 						@Override
 						public void run() {
-							Date date = new Date(System.currentTimeMillis()); // ¶¨ÒåÏÔÊ¾Ê±¼äµÄ¸ñÊ½
+							Date date = new Date(System.currentTimeMillis()); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾Ê±ï¿½ï¿½ï¿½Ä¸ï¿½Ê½
 							SimpleDateFormat sdf1 = new SimpleDateFormat(
-									"yyyyÄêMMÔÂddÈÕ,E");
+									"yyyyï¿½ï¿½MMï¿½ï¿½ddï¿½ï¿½,E");
 							SimpleDateFormat sdf2 = new SimpleDateFormat(
 									"HH:mm:ss");
 							SimpleDateFormat sdf3 = new SimpleDateFormat("HH");
@@ -759,7 +759,7 @@ public class GUI {
 							String ymdStr = sdf1.format(date);
 							String hmsStr = sdf2.format(date);
 
-							// ¸ü¸Ä´°¿ÚÖÐLabel±êÇ©¿Ø¼þÏÔÊ¾ÄÚÈÝ
+							// ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½Labelï¿½ï¿½Ç©ï¿½Ø¼ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
 							ymd.setText(ymdStr);
 							hms.setText(hmsStr);
 
@@ -791,7 +791,7 @@ public class GUI {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				shlStar.setEnabled(false);
-				Ôö¼ÓÔ¤Ô¼ window = new Ôö¼ÓÔ¤Ô¼();
+				ï¿½ï¿½ï¿½ï¿½Ô¤Ô¼ window = new ï¿½ï¿½ï¿½ï¿½Ô¤Ô¼();
 				window.open();
 				shlStar.setEnabled(true);
 			}
@@ -851,7 +851,7 @@ public class GUI {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				shlStar.setEnabled(false);
-				µã²Ë window = new µã²Ë();
+				ï¿½ï¿½ï¿½ï¿½ window = new ï¿½ï¿½ï¿½ï¿½();
 				window.open();
 				shlStar.setEnabled(true);
 			}
@@ -863,7 +863,7 @@ public class GUI {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				shlStar.setEnabled(false);
-				µã²Ë window = new µã²Ë();
+				ï¿½ï¿½ï¿½ï¿½ window = new ï¿½ï¿½ï¿½ï¿½();
 				window.open();
 				shlStar.setEnabled(true);
 			}
@@ -911,7 +911,7 @@ public class GUI {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				shlStar.setEnabled(false);
-				°ïÖú window = new °ïÖú();
+				ï¿½ï¿½ï¿½ï¿½ window = new ï¿½ï¿½ï¿½ï¿½();
 				window.open();
 				shlStar.setEnabled(true);
 			}
@@ -923,7 +923,7 @@ public class GUI {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				shlStar.setEnabled(false);
-				°æ±¾ window = new °æ±¾();
+				ï¿½æ±¾ window = new ï¿½æ±¾();
 				window.open();
 				shlStar.setEnabled(true);
 			}
@@ -932,32 +932,32 @@ public class GUI {
 
 		Label label = new Label(composite, SWT.NONE);
 		label.setForeground(SWTResourceManager.getColor(SWT.COLOR_DARK_MAGENTA));
-		label.setFont(SWTResourceManager.getFont("»ªÎÄÐÐ¿¬", 16, SWT.BOLD));
+		label.setFont(SWTResourceManager.getFont("ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½", 16, SWT.BOLD));
 		label.setBounds(10, 0, 50, 27);
 		label.setText("\u72B6\u6001");
 
 		Label label_1 = new Label(composite, SWT.NONE);
-		label_1.setFont(SWTResourceManager.getFont("»ªÎÄÐÐ¿¬", 14, SWT.BOLD));
+		label_1.setFont(SWTResourceManager.getFont("ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½", 14, SWT.BOLD));
 		label_1.setBounds(10, 37, 92, 23);
 		label_1.setText("\u6700\u4F4E\u6D88\u8D39\uFF1A");
 
 		Label label_2 = new Label(composite, SWT.NONE);
-		label_2.setFont(SWTResourceManager.getFont("»ªÎÄÐÐ¿¬", 14, SWT.BOLD));
+		label_2.setFont(SWTResourceManager.getFont("ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½", 14, SWT.BOLD));
 		label_2.setBounds(10, 89, 92, 27);
 		label_2.setText("\u8FDB\u5E97\u65F6\u95F4\uFF1A");
 
 		Label label_3 = new Label(composite, SWT.NONE);
-		label_3.setFont(SWTResourceManager.getFont("»ªÎÄÐÐ¿¬", 14, SWT.BOLD));
+		label_3.setFont(SWTResourceManager.getFont("ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½", 14, SWT.BOLD));
 		label_3.setBounds(10, 141, 92, 17);
 		label_3.setText("\u5DF2\u7528\u65F6\u95F4\uFF1A");
 
 		Label label_4 = new Label(composite, SWT.NONE);
-		label_4.setFont(SWTResourceManager.getFont("»ªÎÄÐÐ¿¬", 14, SWT.BOLD));
+		label_4.setFont(SWTResourceManager.getFont("ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½", 14, SWT.BOLD));
 		label_4.setBounds(10, 193, 92, 17);
 		label_4.setText("\u6D88\u8D39\u91D1\u989D\uFF1A");
 
 		Label label_5 = new Label(composite, SWT.NONE);
-		label_5.setFont(SWTResourceManager.getFont("»ªÎÄÐÐ¿¬", 14, SWT.BOLD));
+		label_5.setFont(SWTResourceManager.getFont("ï¿½ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½", 14, SWT.BOLD));
 		label_5.setBounds(10, 242, 92, 17);
 		label_5.setText("\u9910\u53F0\u72B6\u6001\uFF1A");
 
@@ -1029,9 +1029,9 @@ public class GUI {
 				}
 				DragSource source = new DragSource(button_n, DND.DROP_MOVE
 						| DND.DROP_COPY);
-				source.setTransfer(new Transfer[] { TextTransfer.getInstance() });// ÉèÖÃ´«ÊäÔØÌåÎªÎÄ±¾ÐÍ
+				source.setTransfer(new Transfer[] { TextTransfer.getInstance() });// ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Ä±ï¿½ï¿½ï¿½
 				source.addDragListener(new MyDragSourceListener());
-				// ÉèÖÃtargetTextÎªÄ¿±êµØ
+				// ï¿½ï¿½ï¿½ï¿½targetTextÎªÄ¿ï¿½ï¿½ï¿½ï¿½
 				DropTarget target = new DropTarget(button_n, DND.DROP_MOVE
 						| DND.DROP_COPY | DND.DROP_DEFAULT);
 				target.setTransfer(new Transfer[] { TextTransfer.getInstance() });
@@ -1055,7 +1055,7 @@ public class GUI {
 							lblNewLabel_3.setText("");
 							lblNewLabel_4.setText("");
 							lblNewLabel_5.setText("");
-							lblNewLabel_6.setText("¿ÕÏÐ");
+							lblNewLabel_6.setText("ï¿½ï¿½ï¿½ï¿½");
 						} else if (stateString.equals("WALK_IN")) {
 							int walkinbillid = uml.middleclass.Table
 									.getWalkinid(ptableid);
@@ -1088,10 +1088,10 @@ public class GUI {
 									.getDate().getMinutes())
 									+ (date.getHours() - walkinBill.getDate()
 											.getHours()) * 60;
-							lblNewLabel_4.setText(String.valueOf(minutes) + "·Ö");
+							lblNewLabel_4.setText(String.valueOf(minutes) + "ï¿½ï¿½");
 							lblNewLabel_5.setText(String.valueOf(wholemoney)
 									+ "Ôª");
-							lblNewLabel_6.setText("¿ªµ¥");
+							lblNewLabel_6.setText("ï¿½ï¿½ï¿½ï¿½");
 						} else {
 							List<Integer> bookbillids = uml.middleclass.Table
 									.getBookbillids(ptableid);
@@ -1135,10 +1135,10 @@ public class GUI {
 													.getPreArrivalTime()
 													.getHours()) * 60;
 									lblNewLabel_4.setText(String
-											.valueOf(minutes) + "·Ö");
+											.valueOf(minutes) + "ï¿½ï¿½");
 									lblNewLabel_5.setText(String
 											.valueOf(wholemoney) + "Ôª");
-									lblNewLabel_6.setText("Ô¤¶©µ½´ï");
+									lblNewLabel_6.setText("Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 									break;
 								}
 							}
@@ -1151,7 +1151,7 @@ public class GUI {
 								lblNewLabel_3.setText("");
 								lblNewLabel_4.setText("");
 								lblNewLabel_5.setText("");
-								lblNewLabel_6.setText("Ô¤¶©Î´´ï");
+								lblNewLabel_6.setText("Ô¤ï¿½ï¿½Î´ï¿½ï¿½");
 							}
 						}
 					}
@@ -1184,9 +1184,9 @@ public class GUI {
 	}
 
 	private class MyDragSourceListener implements DragSourceListener {
-		// ÅÐ¶ÏÊÇ·ñÔÊÐíÍÏ×§¡£ÕâÀïÉè¶¨¿Õ×Ö´®Ê±²»ÔÊÐíÍÏ×§
+		// ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è¶¨ï¿½ï¿½ï¿½Ö´ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×§
 		public void dragStart(DragSourceEvent event) {
-			button100 = getSource(event);// getSourceÊÇ×Ô¶¨Òå·½·¨
+			button100 = getSource(event);// getSourceï¿½ï¿½ï¿½Ô¶ï¿½ï¿½å·½ï¿½ï¿½
 			event.image = button100.getImage();
 			// button.setImage(SWTResourceManager.getImage(GUI.class,"/pic/\u65E0\u4EBA.png"));
 			if (uml.middleclass.Table.search(Integer.parseInt(button100.getText())).getState().equals("EMPTY")||uml.middleclass.Table.search(Integer.parseInt(button100.getText())).getState().equals("BOOK")) {
@@ -1195,24 +1195,24 @@ public class GUI {
 
 		}
 
-		// ×Ô¶¨Òå·½·¨£¬È¡µÃÍÏ×§Ô´×é¼þ
+		// ï¿½Ô¶ï¿½ï¿½å·½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½×§Ô´ï¿½ï¿½ï¿½ï¿½
 		private Button getSource(DragSourceEvent event) {
 			DragSource source = (DragSource) event.widget;
-			Button button = (Button) source.getControl();// ¼´sourceButton
+			Button button = (Button) source.getControl();// ï¿½ï¿½sourceButton
 			return button;
 		}
 
-		// Éè¶¨ÐèÒªÓÃTransfer´«ÊäµÄÊý¾Ý
+		// ï¿½è¶¨ï¿½ï¿½Òªï¿½ï¿½Transferï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		public void dragSetData(DragSourceEvent event) {
-			if (TextTransfer.getInstance().isSupportedType(event.dataType)) {// ÊÇ·ñÖ§³ÖÍÏ×§µÄÊý¾ÝÀàÐÍ
+			if (TextTransfer.getInstance().isSupportedType(event.dataType)) {// ï¿½Ç·ï¿½Ö§ï¿½ï¿½ï¿½ï¿½×§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				Button button = getSource(event);
 				event.data = button.getText();
 			}
 		}
 
-		// ÍÏ×§²Ù×÷Íê³ÉºóÖ´ÐÐ´Ë·½·¨
+		// ï¿½ï¿½×§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Éºï¿½Ö´ï¿½Ð´Ë·ï¿½ï¿½ï¿½
 		public void dragFinished(DragSourceEvent event) {
-			if (event.detail == DND.DROP_MOVE) {// Èç¹ûÊÇÒÆ¶¯ÔòÉ¾³ýsourceTextÖÐµÄÎÄ×Ö
+			if (event.detail == DND.DROP_MOVE) {// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½É¾ï¿½ï¿½sourceTextï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
 				Button button = getSource(event);
 				button.setText("");
 			}
@@ -1220,45 +1220,45 @@ public class GUI {
 	}
 
 	private class MyDropTargetListener implements DropTargetListener {
-		// Êó±ê½øÈëÄ¿±ê×é¼þÊ±µ÷ÓÃ´Ë·½·¨
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ã´Ë·ï¿½ï¿½ï¿½
 		public void dragEnter(DropTargetEvent event) {
-			// Ä¬ÈÏÎªDND.DROP_DEFAULT£¬ÕâÀï½«ÆäÉèÎª¸´ÖÆ£»°´×¡Ctrl¼üÎªDND.DROP_COPY£»°´×¡Shift¼üÎªDND.DROP_MOVE¡£
+			// Ä¬ï¿½ï¿½ÎªDND.DROP_DEFAULTï¿½ï¿½ï¿½ï¿½ï¿½ï½«ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½×¡Ctrlï¿½ï¿½ÎªDND.DROP_COPYï¿½ï¿½ï¿½ï¿½×¡Shiftï¿½ï¿½ÎªDND.DROP_MOVEï¿½ï¿½
 			if (event.detail == DND.DROP_DEFAULT)
 				event.detail = DND.DROP_COPY;
 		}
 
-		// Êó±êÔÚÄ¿±ê×é¼þ·¶Î§Ê±»á²»¶Ïµ÷ÓÃ´Ë·½·¨¡£ÔÚ´Ë·½·¨ÖÐÖ÷ÒªÊÇÉèÖÃevent.feedback£¬Æä¿ÉÄÜÖµÓÐ£º
-		// FEEDBACK_EXPAND Ê¹µ±Ç°¹â±êÏÂµÄÏîÕ¹¿ª£¬ÒÔ±ãÍÏ×§µ½×ÓÏîÉÏ£¬½öÓÃÓÚÊ÷ÐÍ×é¼þ¡£
-		// FEEDBACK_INSERT_AFTER ÔÚÄ³Ïî´¦ÓÚ¹â±êÏÂÖ®ºóÏÔÊ¾Ò»¸ö²åÈë±ê¼Ç£¬½öÓÃÓÚ±í¸ñºÍÊ÷¡£
-		// FEEDBACK_INSERT_BEFORE ÔÚÄ³Ïî´¦ÓÚµ±Ç°¹â±êÏÂÖ®Ç°ÏÔÊ¾Ò»¸ö²åÈë±ê¼Ç£¬½öÓÃÓÚ±í¸ñºÍÊ÷¡£
-		// FEEDBACK_NONE Ê²Ã´Ò²²»×ö.
-		// FEEDBACK_SCROLL Ê¹Ä¿±ê×é¼þ¿ÉÒÔ¹ö¶¯£¬ÒÔ±ã¿ÉÒÔÍÏµ½µ±Ç°¿´²»¼ûµÄÏîÉÏ£¬½öÓÃÓÚ±í¸ñºÍÊ÷¡£
-		// FEEDBACK_SELECT Ê¹µ±Ç°¹â±êÏÂµÄÏî±»Ñ¡ÖÐ£¬½öÓÃÓÚ±í¸ñºÍÊ÷¡£
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§Ê±ï¿½á²»ï¿½Ïµï¿½ï¿½Ã´Ë·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´Ë·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½event.feedbackï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½Ð£ï¿½
+		// FEEDBACK_EXPAND Ê¹ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½×§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// FEEDBACK_INSERT_AFTER ï¿½ï¿½Ä³ï¿½î´¦ï¿½Ú¹ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½Ê¾Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// FEEDBACK_INSERT_BEFORE ï¿½ï¿½Ä³ï¿½î´¦ï¿½Úµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®Ç°ï¿½ï¿½Ê¾Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// FEEDBACK_NONE Ê²Ã´Ò²ï¿½ï¿½ï¿½ï¿½.
+		// FEEDBACK_SCROLL Ê¹Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		// FEEDBACK_SELECT Ê¹ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½ï¿½î±»Ñ¡ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		public void dragOver(DropTargetEvent event) {
 			event.feedback = DND.FEEDBACK_NONE;
 		}
 
-		// µ±°´ÏÂ»ò·Å¿ª¸¨Öú°´¼ü£¨ÈçCtrl, Shift£©Ê±µ÷ÓÃ´Ë·½·¨
+		// ï¿½ï¿½ï¿½ï¿½ï¿½Â»ï¿½ï¿½Å¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ctrl, Shiftï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ã´Ë·ï¿½ï¿½ï¿½
 		public void dragOperationChanged(DropTargetEvent event) {
 			if (event.detail == DND.DROP_DEFAULT)
 				event.detail = DND.DROP_COPY;
 		}
 
-		// µ±Êó±êÀë¿ªÄ¿±ê×é¼þÊ±»áµ÷ÓÃ´Ë·½·¨
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë¿ªÄ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ã´Ë·ï¿½ï¿½ï¿½
 		public void dragLeave(DropTargetEvent event) {
 		}
 
-		// ÔÚÍê³ÉÍÏ×§²Ù×÷,Ö´ÐÐdrop·½·¨Ö®Ç°µ÷ÓÃ´Ë·½·¨¡£
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×§ï¿½ï¿½ï¿½ï¿½,Ö´ï¿½ï¿½dropï¿½ï¿½ï¿½ï¿½Ö®Ç°ï¿½ï¿½ï¿½Ã´Ë·ï¿½ï¿½ï¿½ï¿½ï¿½
 		public void dropAccept(DropTargetEvent event) {
 		}
 
-		// ÔÚÍê³ÉÍÏ×§²Ù×÷Ê±×îºóµ÷ÓÃµÄ·½·¨
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×§ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÃµÄ·ï¿½ï¿½ï¿½
 		public void drop(DropTargetEvent event) {
 			if (TextTransfer.getInstance().isSupportedType(
 					event.currentDataType)) {
-				String str = (String) event.data;// È¡³ö´«ÊäÊý¾Ý
+				String str = (String) event.data;// È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				DropTarget target = (DropTarget) event.widget;
-				Button text = (Button) target.getControl();// ¼´targetText
+				Button text = (Button) target.getControl();// ï¿½ï¿½targetText
 				// text.setText(str);
 				System.out.print(str + "  " + text.getText());
 				if (uml.middleclass.Table.search(Integer.parseInt(str))
